@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Age <= 36.0\ngini = 0.777\nsamples = 11\nvalue = [2, 3, 1, 2, 3]\nclass = HipHop", fillcolor="#ffffff"] ;
+1 [label="Age <= 25.5\ngini = 0.612\nsamples = 7\nvalue = [0, 3, 1, 0, 3]\nclass = HipHop", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Gender <= 0.5\ngini = 0.56\nsamples = 5\nvalue = [0, 3, 1, 0, 1]\nclass = HipHop", fillcolor="#bdf29c"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0]\nclass = Jazz", fillcolor="#39e5c5"] ;
+2 -> 3 ;
+4 [label="Age <= 16.0\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 0, 0, 1]\nclass = HipHop", fillcolor="#a7ee7b"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1]\nclass = hipHop", fillcolor="#e539c0"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]\nclass = HipHop", fillcolor="#7be539"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2]\nclass = hipHop", fillcolor="#e539c0"] ;
+1 -> 7 ;
+8 [label="Age <= 42.0\ngini = 0.5\nsamples = 4\nvalue = [2, 0, 0, 2, 0]\nclass = Classical", fillcolor="#ffffff"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0]\nclass = Classical", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2, 0]\nclass = classical", fillcolor="#3c39e5"] ;
+8 -> 10 ;
+}
